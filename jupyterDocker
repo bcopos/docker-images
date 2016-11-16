@@ -1,0 +1,9 @@
+# Configurations for jupyter docker with a few addl packages (for HPC power analysis)
+
+FROM dataquestio/python2-starter
+
+
+RUN sudo apt-get install libev4 libev-dev
+RUN /opt/ds/bin/pip install cassandra-driver
+RUN /opt/ds/bin/pip install protobuf
+RUN /opt/ds/bin/pip install protobuf-to-dict
